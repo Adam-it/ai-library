@@ -18,11 +18,20 @@ You may also perform review on specific files or selection instead of on the ful
 
 This is a set of agents present in the `feature-builder-team` folder which are designed to work together to help you build a new feature. In order to use it you should start with the `build-feature` prompt which will add additional instructions to your prompt to use the feature builder team agents. Use this reusable prompt together with the description of your feature.
 
+### Marketing posts generator
+
+This is a reusable prompt which you can use to generate social media posts to promote your project/product. 
+
 ## How to use
 
 This repo is just a collection of markdown files, each describing a different agent, skill or prompt. Once you find something interesting, you can copy the relevant markdown content and configure it to use it locally in your own project or (recommended) setup it globally so that it may be used between different projects.
 
 ## Global setup guidance
+
+The following guidance was created for VS Code. 
+
+> Note: ATM custom agents and skills are considered a preview feature of VS not yet available in the insiders version yet.
+> Note: GitHub CLI retrieves skills from the same location as VS Code, but does not support 
 
 ### Agents
 
