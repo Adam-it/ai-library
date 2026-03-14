@@ -71,3 +71,4 @@ In order to configure a reusable prompts globally in VS Code
 
 - [Anvil](https://burkeholland.github.io/anvil/) - Anvil verifies every change before you see it builds, tests, lints, then has other AI models try to break it. You get proof, not promises.
 - [promoptfoo](https://github.com/promptfoo/promptfoo) - picking best LLM for your prompt, testing prompts and AI tooling security vulnerabilities 
+- [Impeccable](https://github.com/pbakaus/impeccable) - skills for reviewing and correcting application UIs
