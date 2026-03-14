@@ -26,14 +26,14 @@ This is a reusable prompt which you can use to generate social media posts to pr
 
 This repo is just a collection of markdown files, each describing a different agent, skill or prompt. Once you find something interesting, you can copy the relevant markdown content and configure it to use it locally in your own project or (recommended) setup it globally so that it may be used between different projects.
 
-## Global setup guidance
-
-The following guidance was created for VS Code. 
+## Global setup guidance 
 
 > Note: ATM custom agents and skills are considered a preview feature of VS not yet available in the insiders version yet.
 > Note: GitHub CLI retrieves skills from the same location as VS Code, but does not support 
 
-### Agents
+### VS Code setup
+
+#### Agents
 
 In order to configure an agent globally in VS Code 
 
@@ -43,7 +43,7 @@ In order to configure an agent globally in VS Code
 4. set the name of the agent as the `name` property defined in the markdown file
 5. copy the content of the markdown file
 
-### Skills
+#### Skills
 
 In order to configure a skill globally in VS Code
 
@@ -53,7 +53,7 @@ In order to configure a skill globally in VS Code
 4. set the name
 5. copy the content of the markdown file
 
-### Prompts
+#### Prompts
 
 In order to configure a reusable prompts globally in VS Code
 
@@ -62,3 +62,11 @@ In order to configure a reusable prompts globally in VS Code
 3. select `User Data` 
 4. set the name
 5. copy the content of the markdown file
+
+### GitHub CLI
+
+// ToDo
+
+## Additional useful resources 
+
+- [Anvil](https://burkeholland.github.io/anvil/) - Anvil verifies every change before you see it builds, tests, lints, then has other AI models try to break it. You get proof, not promises.
