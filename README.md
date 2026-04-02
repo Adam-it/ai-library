@@ -2,7 +2,7 @@
 
 This repository contains an AI co-maintainer plugin for GitHub repositories. The co-maintainer agent is designed to assist with regular maintenance work on GitHub, particularly focusing on reviewing pull request changes, assessing selected code against repository conventions, checking for code duplication, generating marketing materials of the project like social media posts, helping in improving project documentation and manuals, handling issues, and gaining deep understanding of the project to provide valuable feedback and insights and instructions.
 
-The co-maintainer agent is currently capable to perform:
+The co-maintainer agent is currently capable of performing:
 
 - PR reviews - it may perform PR reviews either based on locally checked out branch or based on PR from GitHub Repo. 
 - Generating marketing materials - it may generate social media posts and other promotional content for the project, such as LinkedIn posts.
@@ -16,7 +16,7 @@ The co-maintainer agent is currently capable to perform:
 
 #### Plugin Setup
 
-The easiest way to configure this plugin in VS Code is by opening the chat customization view by executing the VS Code command `Chat: Open Customizations`, then go to the plugin tab and hit the `+` button to add a new plugin. After that provide the GitHub repository URL of this plugin `https://github.com/Adam-it/ai-co-maintainer-plugin` and hit enter. After that you should see a new agent and skills in the chat customizations view. 
+The easiest way to configure this plugin in VS Code is by opening the chat customization view by executing the VS Code command `Chat: Open Customizations`, then go to the plugin tab and hit the `+` button to add a new plugin. After that provide the GitHub repository URL of this plugin `https://github.com/Adam-it/ai-co-maintainer-copilot-plugin` and hit enter. After that you should see a new agent and skills in the chat customizations view. 
 In GitHub Copilot Chat view switch to `co-maintainer Agent` or use one of the custom prompts.
 
 #### Prompts
