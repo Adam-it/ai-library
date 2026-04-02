@@ -1,14 +1,17 @@
+---
+name: gh-pr-review
+description: "Review pull request for a given PR from GitHub in TypeScript or C# codebases. Use when: reviewing PR changes locally, checking code consistency with repo patterns, detecting code duplication, producing structured PR feedback with verdict."
+---
+
 # PR Review Skill
 
-A structured process for reviewing pull request diffs or selected code snippets in a TypeScript or C# codebase. Produces **chat-only feedback** — no file edits.
+A structured process for reviewing pull request based on a given PR from GitHub. Before you may proceed clarify if the user provided the repo name and the PR title or number which you need in order to retrieve the PR. Ask for this information if needed. Produces **chat-only feedback** — no file edits. You may add comments to the PR using `github/add_comment_to_pending_review`, `github/add_issue_comment`, or `github/add_reply_to_pull_request_comment` tools, but you should only do so if explicitly instructed by the user. Otherwise, provide all feedback in your chat response. When performing PR review consider every comments in the PR, PR description and related issue description.
 
 ## Review Workflow
 
-### 1. Gather Context
+### 1. Identify the PR
 
-- If reviewing the full PR, run `git diff main...HEAD --name-only` (or `dev` if the user specifies) to identify changed files, then `git diff main...HEAD` to read the actual diff.
-- If reviewing selected code, read the full file and surrounding files for context.
-- Identify a reference standard by searching for code with similar functionality (e.g., a related service, class, or module) to use as the baseline for consistency checks.
+Using GitHub MCP tools, identify the PR to review based on the information provided by the user (repo name + PR title or number). Retrieve the PR diff and all related comments, PR description and related issue description to gather the full context for your review.
 
 ### 2. Check Consistency with Repo Patterns
 
@@ -30,6 +33,10 @@ This is critical. For every non-trivial block of logic in the PR:
 - Search the codebase for similar logic (API calls, data transformations, validation, URL construction).
 - If equivalent logic already exists in a utility method, helper, or another module, flag it and suggest reusing the existing code.
 - Pay special attention to: URL builders, ID resolvers, permission checks, formatting helpers, common API patterns.
+
+### 4. Check for logical errors and potential bugs
+
+Review the code for common logical errors, edge cases, and potential bugs. Consider whether the code handles error conditions gracefully, whether it correctly implements the intended functionality, and whether there are any scenarios that may not be properly accounted for.
 
 ## Output Format
 

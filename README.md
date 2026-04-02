@@ -1,57 +1,23 @@
-# AI Library
+# AI co-maintainer plugin
 
-## Overview
+This repository contains an AI co-maintainer plugin for GitHub repositories. The co-maintainer agent is designed to assist with regular maintenance work on GitHub, particularly focusing on reviewing pull request changes, assessing selected code against repository conventions, checking for code duplication, generating marketing materials of the project like social media posts, helping in improving project documentation and manuals, handling issues, and gaining deep understanding of the project to provide valuable feedback and insights and instructions.
 
-The aim of this repo is to store different AI approaches and techniques I use with GitHub Copilot in VS Code and CLI. 
+The co-maintainer agent is currently capable to perform:
 
-The repo showcase reusable agents, skills and prompts that help me with my maintainers work.
+- PR reviews - it may perform PR reviews either based on locally checked out branch or based on PR from GitHub Repo. 
+- Generating marketing materials - it may generate social media posts and other promotional content for the project, such as LinkedIn posts.
+- handling issues - ... in progress 
+- generating and maintaining project documentation - ... in progress
+- providing instructions and insights about the project/codebase - ... in progress
 
-## Features
+## Setup
 
-### PR reviewer
+### VS Code
 
-This feature consists of an reusable prompt which is your starting point to perform full review of the changes made in the PR. The prompt inits the pr-review agents which has defined the specific role and uses the pr-review skill to perform the review and provide structured feedback. 
+#### Plugin Setup
 
-You may also perform review on specific files or selection instead of on the full PR. In this case the pr-review skill may be used by Github Copilot agent mode.
-
-### Feature builder
-
-This is a set of agents present in the `feature-builder-team` folder which are designed to work together to help you build a new feature. In order to use it you should start with the `build-feature` prompt which will add additional instructions to your prompt to use the feature builder team agents. Use this reusable prompt together with the description of your feature.
-
-### Marketing posts generator
-
-This is a reusable prompt which you can use to generate social media posts to promote your project/product. 
-
-## How to use
-
-This repo is just a collection of markdown files, each describing a different agent, skill or prompt. Once you find something interesting, you can copy the relevant markdown content and configure it to use it locally in your own project or (recommended) setup it globally so that it may be used between different projects.
-
-## Global setup guidance 
-
-> Note: ATM custom agents and skills are considered a preview feature of VS not yet available in the insiders version yet.
-> Note: GitHub CLI retrieves skills from the same location as VS Code, but does not support 
-
-### VS Code setup
-
-#### Agents
-
-In order to configure an agent globally in VS Code 
-
-1. hit `Chat: Configure Custom Agent` command 
-2. select `Create new custom agent`
-3. select `User Data` 
-4. set the name of the agent as the `name` property defined in the markdown file
-5. copy the content of the markdown file
-
-#### Skills
-
-In order to configure a skill globally in VS Code
-
-1. hit `Chat: Configure Skills` command
-2. select `New skill`
-3. select `<your-user-path>/.copilot/skills` folder
-4. set the name
-5. copy the content of the markdown file
+The easiest way to configure this plugin in VS Code is by opening the chat customization view by executing the VS Code command `Chat: Open Customizations`, then go to the plugin tab and hit the `+` button to add a new plugin. After that provide the GitHub repository URL of this plugin `https://github.com/Adam-it/ai-co-maintainer-plugin` and hit enter. After that you should see a new agent and skills in the chat customizations view. 
+In GitHub Copilot Chat view switch to `co-maintainer Agent` or use one of the custom prompts.
 
 #### Prompts
 
@@ -65,9 +31,13 @@ In order to configure a reusable prompts globally in VS Code
 
 ### GitHub CLI
 
-// ToDo
+// TODO
 
-## Additional useful resources 
+## Usage examples
+
+// TODO
+
+## Additional useful resources / other helpful tools 
 
 - [Anvil](https://burkeholland.github.io/anvil/) - Anvil verifies every change before you see it builds, tests, lints, then has other AI models try to break it. You get proof, not promises.
 - [promoptfoo](https://github.com/promptfoo/promptfoo) - picking best LLM for your prompt, testing prompts and AI tooling security vulnerabilities 

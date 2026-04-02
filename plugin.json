@@ -1,0 +1,27 @@
+{
+  "name": "co-maintainer-plugin",
+  "description": "",
+  "version": "0.0.1",
+  "author": {
+    "name": "Adam Wójcik"
+  },
+  "repository": "https://github.com/Adam-it/ai-co-maintainer-plugin",
+  "license": "MIT",
+  "keywords": [
+    "open-source",
+    "co-maintainer",
+    "github",
+    "pull-requests",
+    "code-review",
+    "documentation",
+    "marketing"
+  ],
+  "agents": [
+    "./agents"
+  ],
+  "skills": [
+    "./skills/generate-marketing-posts",
+    "./skills/gh-pr-review",
+    "./skills/local-pr-review"
+  ]
+}

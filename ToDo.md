@@ -1,5 +1,0 @@
-- [x] Feature team of developers as Agents
-- [x] Skill for PR reivew and a dedicated Agents for performing PR review
-- [x] Reusable prompt for PR review init
-- [x] Reusable prompt for generating social posts
-- [ ] Explain based on docs
