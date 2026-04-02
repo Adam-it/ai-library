@@ -16,6 +16,8 @@ The co-maintainer agent is currently capable of performing:
 
 #### Plugin Setup
 
+> Currently, it seems the setup from GitHub repo URL does not work, so you need to pull it locally and use `Chat: Plugin Locations` setting and add this plugin manually. Click on `Add Item` and provide the local path to the pulled repo.
+
 The easiest way to configure this plugin in VS Code is by opening the chat customization view by executing the VS Code command `Chat: Open Customizations`, then go to the plugin tab and hit the `+` button to add a new plugin. After that provide the GitHub repository URL of this plugin `https://github.com/Adam-it/ai-co-maintainer-copilot-plugin` and hit enter. After that you should see a new agent and skills in the chat customizations view. 
 In GitHub Copilot Chat view switch to `co-maintainer Agent` or use one of the custom prompts.
 
