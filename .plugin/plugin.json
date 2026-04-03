@@ -23,5 +23,8 @@
     "./skills/generate-marketing-posts",
     "./skills/gh-pr-review",
     "./skills/local-pr-review"
+  ],
+  "commands": [
+    "./commands"
   ]
 }

@@ -1,4 +1,5 @@
 ---
+name: co-maintainer-local-pr-review
 description: "Perform a full PR review for the current branch against main/dev using the co-maintainer agent."
 agent: co-maintainer
 ---
