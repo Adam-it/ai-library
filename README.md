@@ -2,10 +2,13 @@
 
 This repository contains an AI co-maintainer plugin for GitHub repositories. The co-maintainer agent is designed to assist with regular maintenance work on GitHub, particularly focusing on reviewing pull request changes, assessing selected code against repository conventions, checking for code duplication, generating marketing materials of the project like social media posts, helping in improving project documentation and manuals, handling issues, and gaining deep understanding of the project to provide valuable feedback and insights and instructions.
 
+> Tip: For the best experience please use the plugin with 'Claude Sonnet 4.6' or 'Claude Opus 4.6' or similar or newer and better models.
+
 The co-maintainer agent is currently capable of performing:
 
 - PR reviews - it may perform PR reviews either based on locally checked out branch or based on PR from GitHub Repo. 
 - Generating marketing materials - it may generate social media posts and other promotional content for the project, such as LinkedIn posts.
+- creating release blog posts - ... in progress
 - handling issues - ... in progress 
 - generating and maintaining project documentation - ... in progress
 - providing instructions and insights about the project/codebase - ... in progress
@@ -16,24 +19,14 @@ The co-maintainer agent is currently capable of performing:
 
 #### Plugin Setup
 
-> Currently, it seems the setup from GitHub repo URL does not work, so you need to pull it locally and use `Chat: Plugin Locations` setting and add this plugin manually. Click on `Add Item` and provide the local path to the pulled repo.
+> Note: The below setup for VS Code might be change quite soon
 
-The easiest way to configure this plugin in VS Code is by opening the chat customization view by executing the VS Code command `Chat: Open Customizations`, then go to the plugin tab and hit the `+` button to add a new plugin. After that provide the GitHub repository URL of this plugin `https://github.com/Adam-it/ai-co-maintainer-copilot-plugin` and hit enter. After that you should see a new agent and skills in the chat customizations view. 
+Currently VS Code does not support installing plugin from other GitHub Repo then the approved or added plugin marketplaces, this might change very soon, but for now in order to use the plugin you need to clone this repository locally. Then open VS Code and use `Chat: Plugin Locations` setting to add the path to the cloned repository. After that you should be able to see `co-maintainer Agent` in the list of available plugins when using `Chat: Open Customizations` view, and together with this plugin you should see the related skills and agent.
 In GitHub Copilot Chat view switch to `co-maintainer Agent` or use one of the custom prompts.
-
-#### Prompts
-
-In order to configure a reusable prompts globally in VS Code
-
-1. hit `Chat: Configure Prompt Files` command
-2. select `New prompt file`
-3. select `User Data` 
-4. set the name
-5. copy the content of the markdown file
 
 ### GitHub CLI
 
-// TODO
+In order to add the plugin to GitHub Copilot CLI simply run the Copilot CLI in terminal and run `/plugin install Adam-it/ai-co-maintainer-copilot-plugin`. After that use the `/agent` command to switch to `co-maintainer Agent`.
 
 ## Usage examples
 
